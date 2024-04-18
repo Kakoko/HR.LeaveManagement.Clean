@@ -10,8 +10,8 @@ namespace HR.LeaveManagement.Application.Contracts.Persistence
     {
        //Implemented async methods
         Task<T> GetByIdAsync(int id);
-        Task<List<T>> GetAsync();
-        Task<T> CreateAsync(T entity);
+        Task<IReadOnlyList<T>> GetAsync();
+        Task CreateAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(T entity);
             
