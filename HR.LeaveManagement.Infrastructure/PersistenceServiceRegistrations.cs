@@ -19,6 +19,9 @@ namespace HR.LeaveManagement.Persistence
             services.AddDbContext<HRDatabaseContext>(options => options.UseSqlServer(configuration.GetConnectionString("HRDatabaseConnection")));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
+            services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
+            services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
             return services;
         }
     }
