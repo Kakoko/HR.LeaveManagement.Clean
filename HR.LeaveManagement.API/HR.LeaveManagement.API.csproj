@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj" />
+    <ProjectReference Include="..\HR.LeaveManagement.Infrastructure\HR.LeaveManagement.Persistence.csproj" />
+    <ProjectReference Include="..\HR.LeaveManagement.Infrastructur\HR.LeaveManagement.Infrastructur.csproj" />
+  </ItemGroup>
+
 </Project>
